@@ -1,0 +1,43 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+#projList ul {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: center;
+  padding-right: 25px;
+}
+
+#projList li {
+    margin: 10px;
+    background-color: #10a5d5;
+    width: 500px;
+    height: 310px;
+    border: 2px solid #1585a8;
+    transition: transform 1s;
+}
+
+#projList li:hover {
+    transform: rotate(-1.2deg);
+}
+
+#projList a {
+   color: #f4f4f4; 
+}
+
+#projHeading {
+    text-align: center;
+    color: #373737;
+    margin-top: 50px;
+}
+
+#projHeading p {
+    margin-top: -10px;
+    color: #373737;
+    display: inline;
+}
+
+

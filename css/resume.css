@@ -1,0 +1,25 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+#resume {
+    text-align: center;
+}
+
+
+@media (min-width: 1113px) {
+    #resume img {
+        width: 700px;
+        height: 730px;
+        transition: transform 1s;
+    }
+    
+    #resume {
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+   #resume img:hover {
+    transform: scale(1.1)
+   }
+}

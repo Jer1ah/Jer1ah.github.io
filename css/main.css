@@ -1,0 +1,212 @@
+/*Main Styles*/
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #c1e1eb;
+}
+
+li {
+   list-style-type: none;
+}
+
+a {
+   text-decoration: none; 
+}
+
+.active {
+    border: 3px #1392b9 solid;
+}
+
+/*Header Styles*/
+
+#coverPhoto {
+    background: url("../img/golf.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+#coverPhoto img {
+    border-radius: 50%;
+    margin-bottom: 0;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+#coverPhoto h3 {
+    margin-top: 0;
+    color: #f4f4f4;
+}
+
+/*Nav Styles*/
+
+nav a {
+    color: #f5f4f4;
+    padding: 15px 122px;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+  margin-right: 33px;
+  background-color: #10a5d5;
+  margin-top: 8px;
+  border-radius: 4px;
+  padding: 15px;
+  border: 1px #1392b9 solid;
+}
+
+nav li:hover {
+   background-color: #1392b9; 
+}
+
+/*Bio Styles*/
+
+.dollywood {
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    margin-left: 10px;
+    color: #1585a8;
+}
+
+p {
+   color: #0f0f0f;
+   font-size: 1.1em;
+}
+
+.intro {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#otherThings {
+    margin-left: 20px;
+    color: #1392b9;
+}
+
+.thingsList {
+    color: #0f0f0f;
+    font-size: 1.1em;
+}
+
+#contact {
+    text-align: center;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+#contact img {
+   margin: 15px; 
+   transition: transform .5s;
+}
+
+#contact img:hover {
+    transform: scale(1.3);
+}
+
+#contact ul {
+    margin-left: -20px;
+}
+    
+    
+@media (min-width: 1113px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav li {
+        
+    }
+    
+    h1 {
+        margin-left: 4em;
+    }
+    
+    #contact h1 {
+        margin: auto;
+    }
+    
+    #otherThings {
+      margin-left: 7.7em;
+    }
+    
+    .thingsList {
+        margin-left: 7em;
+    }
+    
+    p {
+        max-width: 70%;
+    }
+    
+}  
+
+@media (min-width: 1400px) {
+    #wrapper {
+        display: flex;
+    }
+    
+    #right {
+        flex: 1;
+        margin-right: 2em;
+        margin-top: 2em;
+    }
+    
+    #left {
+        flex: 2;
+        margin-top: 2em;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    
+    #left p {
+        width: 60%;
+    }     
+    
+    .thingsList {
+        margin-left: 0;
+    }
+    
+    h1 {
+        margin-left: 15px;
+    }
+    
+    #otherThings {
+        margin-left: 25px;
+    }
+    
+    #about {
+        margin-left: 5em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
