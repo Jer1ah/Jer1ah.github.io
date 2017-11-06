@@ -15,9 +15,19 @@
     margin: 10px;
     background-color: #10a5d5;
     width: 500px;
-    height: 310px;
+    height: 350px;
     border: 2px solid #1585a8;
     transition: transform 1s;
+}
+
+#projList p {
+    color: #f7f7f7;
+    font-size: .9em;
+    margin-bottom: 10px;
+}
+
+#projList h4 {
+   margin-bottom: 10px;
 }
 
 #projList li:hover {
@@ -38,6 +48,13 @@
     margin-top: -10px;
     color: #373737;
     display: inline;
+}
+
+@media (min-width: 1113px) {
+    #projList p {
+        margin: auto;
+        margin-bottom: 10px;
+    }
 }
 
 
