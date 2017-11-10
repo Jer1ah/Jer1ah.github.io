@@ -92,6 +92,14 @@ p {
     margin-top: 10px;
 }
 
+#imgs {
+    text-align: center;
+}
+
+#imgs a {
+    display: inline-block;
+}
+
 #otherThings {
     margin-left: 20px;
     color: #1392b9;
@@ -119,6 +127,11 @@ p {
 
 #contact ul {
     margin-left: -20px;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
 }
     
     
