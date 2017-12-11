@@ -13,10 +13,10 @@
 
 #projList li {
     margin: 10px;
-    background-color: #10a5d5;
+    background-color: #249996;
     width: 500px;
     height: 450px;
-    border: 2px solid #1585a8;
+    border: 2px solid #2b7a78;
     transition: transform 1s;
 }
 
@@ -25,6 +25,7 @@
     font-size: .9em;
     font-weight: bold;
     font-size: 1.01em;
+    line-height: 1.4em;
     width: 80%;
     margin: auto;
     margin-bottom: 10px;
