@@ -64,6 +64,7 @@ nav li {
   border-radius: 4px;
   padding: 15px;
   border: 1px #2b7a78 solid;
+  font-size: 1.5em;
 }
 
 nav li:hover {
@@ -79,14 +80,15 @@ nav li:hover {
 }
 
 h1 {
-    margin-left: 10px;
     color: #17252a;
+    font-size: 3em;
+    text-align: center;
 }
 
 p {
    color: #0f0f0f;
-   font-size: 1.1em;
-   line-height: 1.5em;
+   font-size: 1.4em;
+   line-height: 1.6em;
 }
 
 .intro {
@@ -104,19 +106,24 @@ p {
 }
 
 #otherThings {
-    margin-left: 20px;
     color: #17252a;
+    font-size: 1.5em;
 }
 
 .thingsList {
     color: #0f0f0f;
-    font-size: 1.1em;
+    font-size: 1.3em;
+    text-align: center;;
 }
 
 #contact {
     text-align: center;
     margin-top: 5em;
     margin-bottom: 2em;
+}
+
+#contact h3 {
+    font-size: 1.4em;
 }
 
 #contact img {
@@ -136,6 +143,21 @@ p {
     display: flex;
     justify-content: center;
 }
+
+
+#contactH1, #more, #otherThings {
+    text-align: center;
+}
+
+
+@media ( min-width: 500px ) {
+    
+    h1 {
+      text-align: center;
+      margin-left: 15px;
+    }
+    
+}
     
     
 @media (min-width: 1113px) {
@@ -145,25 +167,19 @@ p {
         align-items: center;
     }
     
-    nav li {
-        
-    }
-    
-    h1 {
-        margin-left: 4em;
-    }
     
     #contact h1 {
         margin: auto;
     }
     
-    #otherThings {
-      margin-left: 7.7em;
+    #more {
+        margin-top: 1.5em;
     }
     
-    .thingsList {
-        margin-left: 7em;
+    #about {
+        margin-top: 1.5em;
     }
+
     
     p {
         max-width: 70%;
@@ -172,9 +188,11 @@ p {
 }  
 
 @media (min-width: 1400px) {
+    
     #wrapper {
         display: flex;
     }
+    
     
     #right {
         flex: 1;
@@ -192,18 +210,7 @@ p {
     #left p {
         width: 60%;
     }     
-    
-    .thingsList {
-        margin-left: 0;
-    }
-    
-    h1 {
-        margin-left: 15px;
-    }
-    
-    #otherThings {
-        margin-left: 25px;
-    }
+
     
     #about {
         margin-left: 5em;
