@@ -17,7 +17,7 @@
     width: 500px;
     height: 450px;
     border: 2px solid #2b7a78;
-    transition: transform 1s;
+    transition: background 1.3s;
 }
 
 #projList p {
@@ -38,7 +38,7 @@
 }
 
 #projList li:hover {
-    transform: rotate(-1.2deg);
+    background: #2b7a78;
 }
 
 #projList a {
@@ -49,6 +49,14 @@
     text-align: center;
     color: #373737;
     margin-top: 50px;
+}
+
+#projHeading p {
+    font-size: 1.5em;
+}
+
+#projHeading h3 {
+    font-size: 2em;
 }
 
 #projHeading p {
