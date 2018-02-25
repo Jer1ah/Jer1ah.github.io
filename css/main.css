@@ -56,6 +56,14 @@ header {
     text-align: center;
 }
 
+#mainContent a {
+    color: #369cb0;
+}
+
+#mainContent a:hover {
+    cursor: pointer;
+}
+
 #mainContent img {
     border-radius: 3px;
     display: block;
