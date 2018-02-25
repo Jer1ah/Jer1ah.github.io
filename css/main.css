@@ -60,6 +60,10 @@ header {
     color: #369cb0;
 }
 
+#mainContent a:visited {
+    color: #369cb0;
+}
+
 #mainContent a:hover {
     cursor: pointer;
 }
