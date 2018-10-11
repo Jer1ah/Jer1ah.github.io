@@ -50,6 +50,11 @@
     a {
         color: #eee;
         text-decoration: none;
+        transition: all .3s;
+    }
+    
+    a:hover {
+        color: #51b3a6;
     }
 }
 

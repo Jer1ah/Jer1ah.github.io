@@ -25,10 +25,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: all .3s;
             
             img {
                 height: 1.4rem;
             }
+        }
+        
+        li:hover {
+            background: #555;
+            cursor: pointer;
         }
     }
 }

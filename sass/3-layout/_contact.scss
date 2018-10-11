@@ -27,6 +27,11 @@
             font-size: .8rem;
             margin-top: 1rem;
             text-align: center;
+            transition: all .3s;
+        }
+        
+        a:hover {
+            color: #51b3a6;
         }
         
         h3 {

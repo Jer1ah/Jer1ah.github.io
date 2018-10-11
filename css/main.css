@@ -55,6 +55,10 @@ ul {
 .header__nav a {
   color: #eee;
   text-decoration: none;
+  transition: all 0.3s;
+}
+.header__nav a:hover {
+  color: #51b3a6;
 }
 
 .nav__active {
@@ -148,6 +152,10 @@ ul {
 .projects__list--info a {
   color: white;
   text-decoration: none;
+  transition: all 0.3s;
+}
+.projects__list--info a:hover {
+  color: #51b3a6;
 }
 .projects__list--info p {
   width: 65%;
@@ -281,6 +289,11 @@ ul {
   font-size: 1rem;
   border: none;
   letter-spacing: 0.1rem;
+  transition: all 0.3s;
+}
+.main__heading--button:hover {
+  cursor: pointer;
+  transform: scale(1.9);
 }
 
 /*-- MEDIA QUERIES --*/
@@ -428,6 +441,10 @@ ul {
   font-size: 0.8rem;
   margin-top: 1rem;
   text-align: center;
+  transition: all 0.3s;
+}
+.contact__info a:hover {
+  color: #51b3a6;
 }
 .contact__info h3 {
   font-size: 1rem;
@@ -482,9 +499,14 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
 }
 .footer__social li img {
   height: 1.4rem;
+}
+.footer__social li:hover {
+  background: #555;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
