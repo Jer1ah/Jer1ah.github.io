@@ -293,7 +293,6 @@ ul {
 }
 .main__heading--button:hover {
   cursor: pointer;
-  transform: scale(1.9);
 }
 
 /*-- MEDIA QUERIES --*/
