@@ -4,44 +4,119 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jeriah Bowers || Web Developer</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="css/lightbox.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div id="heading">
-          <p>Hello people, my name is</p>
-          <h1>Jeriah Bowers</h1>
-          <p>Web Developer, Designer &amp; Golf Addict</p>
-      </div>
-    </header>
-  <div id="container">
-    <div id="mainContent">
-        <h1>About Me</h1>
-        <p> <img src="img/jeriah.jpg" height="300" width="300"> Why hello there! *Star Wars reference* My name is Jeriah and here is a little backstory about me, and more specifically about why I chose this career path. I've always been known as the guy who takes calculated risk when it comes to big decisions whether that be buying a car or in this case choosing a career where not only I would love what I do, but also be in a field that encourages growth. And for that reason I didn't even start coding until 2016 after talking with an individual I trust who's a developer and then reading some material he suggested about front-end development, and after reading it and coding some HTML I knew this is what I wanted. And here we are 1 and 1/2 years and 10 languages/frameworks later. And I'm ready to prove myself as a developer. <a href="img/resume.png" data-lightbox="lightbox">Click here for resume</a></p>
-    </div> <!-- Main Content Div End -->
-    <div id="portfolio">
-       <h1>Portfolio</h1> 
-       <ul>
-           <li><a href="https://jer1ah.github.io/Photo_Gallery_Project/" target="_blank"><h2>LightBox Photo Gallery</h2><p>In this application I used a jQuery lightbox to display photos and also have an input field to filter photos based on their captions.</p><img src="img/lightbox.jpg" height="200" width="290"></a></li>
-           <li><a href="https://jer1ah.github.io/Video-Player-Project/" target="_blank"><h2>MEJS Video Player</h2><p>In this project I used the MEJS jQuery plugin and then some custom jQuery to highlight the captions as the video plays.</p><img src="img/video-player.png" height="200" width="290"></a></li>
-           <li><a href="https://jer1ah.github.io/Ajax-Project/" target="_blank"><h2>Random User Generator</h2><p>This application retrieves random users from an API using AJAX then displays them and when clicked a lightbox with more information about that user appears using custom jQuery.</p><img src="img/ajax.png" height="150" width="290"></a></li>
-           <li><a href="https://jer1ah.github.io/WebApp-Dashboard-Project/" target="_blank"><h2>DashBoard Website</h2><p>This is a simple WeApp DashBoard using some vanilla js to create some form validations and a popup alert. Also used SASS in this particular website.</p><img src="img/dashboard.png" height="150" width="290"></a></li>
-       </ul>
-    </div> <!-- Portfolio Div End -->
-  </div> <!-- Container Div End -->
-    <div id="social">
-        <a href="https://www.instagram.com/jer1ah/?hl=en" target="_blank"><img src="img/instagram.png" alt="Instagram Icon"height="75"></a>
-        <a href="https://www.facebook.com/Jman197" target="_blank"><img src="img/facebook.png" alt="FaceBook Icon" height="75"></a>
-        <a href="https://github.com/Jer1ah" target="_blank"><img src="img/github.png" alt="GitHub Icon" height="75"></a>
-        <a href="https://www.linkedin.com/in/jeriah-b-2b809990/" target="_blank"><img src="img/linkedin.png" alt="Linkedin Icon" height="75"></a>
-    </div> <!-- Social Div End -->  
-    <footer><span>&copy;Jeriah Bowers</span></footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/lightbox.js"></script>
-    <script src="js/main.js"></script>
+      <header class="header">
+          <div class="header__nav--container">
+              <nav class="header__nav">
+                  <div class="header__nav--icons">
+                      <h3 class="header__nav--h3">Jer1ah</h3>
+                      <img src="img/menu.svg" alt="Menu svg" class="header__nav--menu">
+                  </div> <!-- .header__nav--icons div end -->
+                  <ul class="header__nav--list">
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#projects">Projects</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </nav> <!-- .header__nav end -->
+          </div> <!-- .header__nav--container div end -->
+          <div class="main">
+              <div class="main__heading">
+                  <h1 class="main__heading--h1">Jeriah Bowers</h1>
+                  <p class="main__heading--p">My name is Jeriah and this is my portfolio website!</p>
+                  <a href="#about"><button class="main__heading--button">Get Started</button></a>
+              </div> <!-- .main__heading div end -->
+          </div> <!-- .main div end -->
+      </header>
+      <div class="about" id="about">
+          <div class="about__top">
+              <div class="about__image">
+                  <img src="img/jeriah:jesh.png" alt="Picture of myself">
+              </div> <!-- .about__image div end -->
+              <div class="about__info">
+                  <h1>About Me</h1>
+                  <p>As you can see above my name is Jeriah and I build websites! (btw I'm the guy on the left, the other guy is my youngest brother.) I started programming/developing back in the fall of 2016 and have fell in love with it ever since, I've been working at getting better at my craft while taking online courses thru udemy and team treehouse. My skills are listed below. And when I'm not coding you can most likely find me either playing golf or on Destiny, and that's what would be described as a very short introduction to me :)</p>
+              </div> <!-- .about__info div end -->
+          </div> <!-- .about__top div end -->
+          <div class="about__skills">
+              <h1>Skills</h1>
+              <ul class="about__skills--list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>React.js</li>
+                  <li>Bootstrap</li>
+                  <li>SASS</li>
+                  <li>AJAX</li>
+                  <li>Git</li>
+                  <li>Command Line</li>
+              </ul>
+          </div>
+      </div> <!-- .about div end -->
+      <div class="projects" id="projects">
+          <ul class="projects__list">
+              <li class="right">
+                  <img src="img/panthers-website.jpg" alt="Project Image" class="projects__list--image">
+                  <div class="projects__list--info">
+                      <h1><a href="https://jer1ah.github.io/panthers-website/" target="_blank">Panthers Project Website</a></h1>
+                      <p>In this project all I did was copy the panthers main landing page and all the interactivity without leading to any external content.</p>
+                      <hr>
+                  </div> <!-- .project__list--info div end -->
+              </li>
+              <li class="left">
+                  <img src="img/eatwell-website.jpg" alt="Project Image" class="projects__list--image">
+                  <div class="projects__list--info">
+                      <h1><a href="https://jer1ah.github.io/eatwell-project/" target="_blank">EatWell Website</a></h1>
+                      <p>This is a project website about a fictitious restaurant.</p>
+                      <hr>
+                  </div> <!-- .project__list--info div end -->
+              </li>
+              <li class="right">
+                  <img src="img/luxury-hotel.jpg" alt="Project Image" class="projects__list--image">
+                  <div class="projects__list--info">
+                      <h1><a href="https://jer1ah.github.io/Luxury-Hotel-Project/" target="_blank">Luxury-Hotel Website</a></h1>
+                      <p>This is another fictitious website this time about a luxury hotel.</p>
+                      <hr>
+                  </div> <!-- .project__list--info div end -->
+              </li>
+          </ul> <!-- .project__list ul end -->
+      </div> <!-- .projects div end -->
+      <div class="contact" id="contact">
+          <div class="contact__info">
+              <img src="img/map.svg" alt="Map png">
+              <h3>ADDRESS</h3>
+              <hr>
+              <a href="https://www.google.com/maps/place/6555+Deer+Haven+Dr,+Mt+Pleasant,+NC+28124/@35.3959574,-80.468751,17z/data=!3m1!4b1!4m5!3m4!1s0x88540d3aae622a53:0xefea5ed512df82b1!8m2!3d35.395953!4d-80.466557" target="_blank">6555 Deer Haven Drive, Mt. Pleasant NC</a>
+          </div> <!-- .contact__info div end -->
+          <div class="contact__info">
+              <img src="img/email.svg" alt="Map png">
+              <h3>EMAIL</h3>
+              <hr>
+              <a href="mailto:jeriah97bowers@yahoo.com">jeriah97bowers@yahoo.com</a>
+          </div> <!-- .contact__info div end -->
+          <div class="contact__info">
+              <img src="img/smartphone-call.svg" alt="Map png">
+              <h3>PHONE</h3>
+              <hr>
+              <a href="tel:9806221490">980-622-1490</a>
+          </div> <!-- .contact__info div end -->
+      </div> <!-- .contact div end -->
+      <footer class="footer">
+          <ul class="footer__social">
+              <li><a href="https://www.facebook.com/Jman197" target="_blank"><img src="img/facebook.svg" alt="Social svg"></a></li>
+              <li><a href="https://github.com/Jer1ah" target="_blank"><img src="img/github.svg" alt="Social svg"></a></li>
+              <li><a href="https://www.instagram.com/jer1ah/" target="_blank"><img src="img/instagram.svg" alt="Social svg"></a></li>
+          </ul>
+          <p>Copyright &copy; Jeriah Bowers 2018</p>
+      </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
   </body>
 </html>
 
