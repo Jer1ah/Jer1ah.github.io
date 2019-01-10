@@ -1,89 +1,62 @@
 .header {
-    padding: 1px;
     height: 100vh;
-    background-image: linear-gradient(rgba(150, 150, 150, .70) 70%, #222 98%),
-                      url("../img/trees&water.png");
+    background: linear-gradient(rgba(214, 215, 223, .3), rgba(214, 215, 223, .1)),
+                url("../../img/header.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-}
+    padding: .1rem;
 
-.main {
-    text-align: center;
-    margin-top: 20rem;
-    
     &__heading {
-        
-        &--h1 {
-            font-size: 5rem;
-            letter-spacing: .5rem;
-            margin-bottom: .5rem;
-            background: -webkit-linear-gradient(rgba(230, 230, 230, 0), rgba(50, 50, 50, .6));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        &--p {
-            margin-top: 0;
-            font-size: 1.4rem
-            color: #ebebeb;
-            width: 25rem;
-            margin: auto;
-        }
-        
-        &--button {
-            background: #51b3a6;
-            color: white;
-            padding: 1.2rem 2.5rem;
-            margin-top: 3rem;
-            border-radius: .2rem;
-            font-size: 1rem;
-            border: none;
-            letter-spacing: .1rem;
-            transition: all .3s;
-        }
-        
-        &--button:hover {
-            cursor: pointer;
-        }
-    }
-}
+        text-align: center;   
+        margin-top: 25rem;      
 
-
-/*-- MEDIA QUERIES --*/
-
-@media( max-width: 990px ) {
-    
-    .main__heading {
-    
-    h1 {
-        font-size: 4rem;
-    }
-    
-    p {
-        font-size: 1rem;
-    }
-    
-    button {
-        margin-top: 2.5rem;
-    }
-  }
-}
-
-@media( max-width: 620px ) {
-    
-    .main__heading {
         h1 {
-            font-size: 2.3rem;
+            font-size: 6rem;
+            color: white;
+            width: 65rem;
+            margin: 0 auto;
         }
-        
-        p {
-            width: 60%;
+
+        a {
+            background-color: $main-blue;
+            color: white;
+            padding: 1.8rem 3.5rem;
+            border: none;
+            border-radius: 5rem;
+            font-size: 1.7rem;
+            margin-top: 3.5rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover {
+            background-color: darken(#528ED6, 9%);
         }
     }
 }
 
+//Media Queries
+@media(max-width: 945px) {
+    .header__heading {
+        margin-top: 30rem;
 
+        h1 {
+            font-size: 4.5rem;
+            width: 55rem;
+        }
 
+        a {
+            padding: 1.5rem 2.8rem;
+        }
+    }
+}
 
-
-
+@media(max-width: 545px) {
+    .header {
+        &__heading {
+            h1 {
+                max-width: 95%;
+                font-size: 4rem;
+            }
+        }
+    }
+}

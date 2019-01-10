@@ -1,0 +1,141 @@
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: all .5s;
+    padding: 2rem 0;
+
+    .mobile__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    img {
+        height: 3rem;
+        margin-right: 5rem;
+        display: none;
+    }
+
+    &--list {
+        display: flex;
+        align-items: center;
+        margin-right: 15rem;
+
+        &--items {
+            margin: 0 1.3rem;
+
+            a {
+                text-decoration: none;
+                color: $light-gray;
+                font-size: 1.9rem;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
+    }
+
+    h3 {
+        color: $light-gray;
+        margin: 15rem;
+        font-size: 2.5rem;
+        display: inline-block;
+        margin: 0 0 0 15rem;
+    }
+}
+
+.active__nav {
+    background-color: white;
+    box-shadow: -5px 0px 61px 0px rgba(147,147,147,1);
+
+    h3 {
+        color: #528ED6;
+    }
+
+    a {
+        color: black;
+    }
+
+    a:hover {
+        color: #528ED6;
+    }
+}
+
+//Media Queries
+@media(max-width: 1075px) {
+    .header__nav {
+        &--list {
+            margin-right: 5rem;
+        }
+
+        h3 {
+            margin-left: 5rem;
+        }
+    }
+}
+
+@media(max-width: 965px) {
+    .header__nav {
+        flex-direction: column;
+        background-color: white;
+
+        &--list {
+            flex-direction: column;
+            align-self: flex-start;
+            text-align: left;
+            display: none;
+            margin-left: 5rem;
+            margin-top: 2rem;
+            padding: 0;
+
+            &--items {
+                margin: .7rem 0;
+                width: 10rem;
+            }
+        }
+
+        img {
+            display: block;
+        }
+
+        a {
+            color: black;
+            text-align: left;
+        }
+
+        a:hover {
+            color: #528ED6;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+
+        h3 {
+            color: #528ED6;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .mobile__nav {
+        h3 {
+            margin-left: 2rem;
+        }
+
+        img {
+            margin-right: 2rem;
+        }
+    }
+
+    .header__nav--list {
+        margin-left: 2rem;
+    }
+}

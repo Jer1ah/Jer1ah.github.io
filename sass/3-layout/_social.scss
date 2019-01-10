@@ -1,0 +1,136 @@
+.footer {
+    background-color: $main-blue;
+    padding: .1rem;
+
+    &__heading {
+        width: 50rem;
+        color: white;
+        text-align: center;
+        margin: 11rem auto 5rem;
+
+        h1 {
+            font-size: 2.9rem;
+        }
+
+        p {
+            font-size: 1.9rem;
+            line-height: 2.8rem;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+
+        &--item {
+            background-color: darken(#528ED6, 20%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: .5rem 1rem;
+            width: 25rem;
+            height: 7rem;
+            border-radius: .5rem;
+            text-align: center;
+
+            img {
+                height: 5rem;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 1.7rem;
+                width: 17rem;
+                font-weight: bold;
+                color: white;
+                display: block;
+            }
+        }
+    }
+
+    &__social {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &--item {
+            background-color: darken(#528ED6, 20%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: .5rem 1rem;
+            width: 25rem;
+            height: 7rem;
+            border-radius: .5rem;
+            text-align: center;
+
+            img {
+                height: 5rem;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 1.7rem;
+                width: 17rem;
+                font-weight: bold;
+                color: white;
+                display: block;
+            }
+        }
+    }
+
+    span {
+        display: block;
+        color: white;
+        text-align: center;
+        margin: 6rem auto 3rem;
+        font-size: 1.5rem;
+    }
+}
+
+//Media Queries 
+@media(max-width: 555px) {
+    .footer__info {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .footer__social {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .footer__social--item {
+        width: 95%;
+    }
+
+    .footer__contact {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .footer__contact--item {
+        width: 95%;
+    }
+
+    .footer__heading {
+        width: 95%;
+
+        p {
+            width: 95%;
+            margin: auto;
+        }
+    }
+}
