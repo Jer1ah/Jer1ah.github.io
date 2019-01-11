@@ -24,3 +24,6 @@ $(window).resize(() => {
         $(".header__nav--list").css("display", "none");
     }
 });
+
+//Adding scroll animations
+AOS.init();
