@@ -70,6 +70,10 @@ ul {
   color: #528ED6;
 }
 
+.activeScroll {
+  color: #528ED6 !important;
+}
+
 @media (max-width: 1075px) {
   .header__nav--list {
     margin-right: 5rem;
