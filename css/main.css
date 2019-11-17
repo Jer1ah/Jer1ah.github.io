@@ -42,14 +42,14 @@ ul {
 }
 .header__nav--list--items a {
   text-decoration: none;
-  color: #cacaca;
+  color: #fff;
   font-size: 1.9rem;
 }
 .header__nav--list--items a:hover {
   color: white;
 }
 .header__nav h3 {
-  color: #cacaca;
+  color: #fff;
   margin: 15rem;
   font-size: 2.5rem;
   display: inline-block;
@@ -131,33 +131,19 @@ ul {
 }
 .header {
   height: 100vh;
-  background: linear-gradient(rgba(214, 215, 223, 0.3), rgba(214, 215, 223, 0.1)), url("../../img/header.jpg");
+  background: linear-gradient(rgba(82, 142, 214, 0.5), rgba(82, 142, 214, 0.5)), url("../../img/codingImg.png");
   background-size: cover;
   padding: 0.1rem;
 }
 .header__heading {
   text-align: center;
-  margin-top: 25rem;
+  margin-top: 30rem;
 }
 .header__heading h1 {
   font-size: 6rem;
   color: white;
-  width: 65rem;
+  width: 75rem;
   margin: 0 auto;
-}
-.header__heading a {
-  background-color: #528ED6;
-  color: white;
-  padding: 1.8rem 3.5rem;
-  border: none;
-  border-radius: 5rem;
-  font-size: 1.7rem;
-  margin-top: 3.5rem;
-  text-decoration: none;
-  display: inline-block;
-}
-.header__heading a:hover {
-  background-color: #3076ca;
 }
 
 @media (max-width: 945px) {
@@ -167,9 +153,6 @@ ul {
   .header__heading h1 {
     font-size: 4.5rem;
     width: 55rem;
-  }
-  .header__heading a {
-    padding: 1.5rem 2.8rem;
   }
 }
 @media (max-width: 545px) {
@@ -346,7 +329,7 @@ ul {
   margin: 0 2.5rem 2rem;
   line-height: 2.7rem;
 }
-.portfolio__item a {
+.portfolio__item .demo {
   background-color: #528ED6;
   color: white;
   border-radius: 0.2rem;
@@ -358,8 +341,21 @@ ul {
   bottom: 2rem;
   left: 2rem;
 }
+.portfolio__item .source {
+  background-color: #528ED6;
+  color: white;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  font-size: 1.7rem;
+  display: inline-block;
+  padding: 1rem 2.2rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 12.5rem;
+}
 .portfolio__item a:hover {
   background-color: #3076ca;
+  cursor: pointer;
 }
 
 @media (max-width: 1390px) {
@@ -394,7 +390,7 @@ ul {
   width: 50rem;
   color: white;
   text-align: center;
-  margin: 11rem auto 4rem;
+  margin: 7rem auto 3rem;
   max-width: 90%;
 }
 .footer__heading h1 {
@@ -410,7 +406,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 .footer__social {
   padding: 0;
@@ -425,13 +421,13 @@ ul {
   justify-content: center;
   align-items: center;
   margin: 0 1rem;
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   text-align: center;
 }
 .footer__social--item img {
-  height: 3.8rem;
+  height: 3rem;
 }
 .footer__social--item a {
   text-decoration: none;

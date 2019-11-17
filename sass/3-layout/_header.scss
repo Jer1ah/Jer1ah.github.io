@@ -1,35 +1,19 @@
 .header {
     height: 100vh;
-    background: linear-gradient(rgba(214, 215, 223, .3), rgba(214, 215, 223, .1)),
-                url("../../img/header.jpg");
+    background: linear-gradient(rgba(82, 142, 214, .5), rgba(82, 142, 214, .5)),
+                url("../../img/codingImg.png");
     background-size: cover;
     padding: .1rem;
 
     &__heading {
         text-align: center;   
-        margin-top: 25rem;      
+        margin-top: 30rem;      
 
         h1 {
             font-size: 6rem;
             color: white;
-            width: 65rem;
+            width: 75rem;
             margin: 0 auto;
-        }
-
-        a {
-            background-color: $main-blue;
-            color: white;
-            padding: 1.8rem 3.5rem;
-            border: none;
-            border-radius: 5rem;
-            font-size: 1.7rem;
-            margin-top: 3.5rem;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        a:hover {
-            background-color: darken(#528ED6, 9%);
         }
     }
 }
@@ -42,10 +26,6 @@
         h1 {
             font-size: 4.5rem;
             width: 55rem;
-        }
-
-        a {
-            padding: 1.5rem 2.8rem;
         }
     }
 }
