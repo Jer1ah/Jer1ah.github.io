@@ -94,3 +94,7 @@ $('a[href*="#"]')
       $(".header__nav--list--items:nth-child(4) a").removeClass("activeScroll");
     }
   });
+
+  function fab(num) {
+    
+  }
