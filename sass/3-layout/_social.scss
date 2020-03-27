@@ -3,21 +3,15 @@
     padding: .1rem;
 
     &__heading {
-        width: 50rem;
+        width: 48rem;
         color: white;
         text-align: center;
-        margin: 7rem auto 3rem;
+        margin: 7rem auto 4rem;
         max-width: 90%;
 
         h1 {
-            font-size: 2.9rem;
-            margin: auto;
-        }
-
-        p {
-            font-size: 1.9rem;
-            line-height: 2.8rem;
-            margin-bottom: 0;
+            font-size: 4rem;
+            margin: 5rem auto 0;
         }
     }
 
@@ -40,14 +34,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 1rem;
-            width: 6rem;
-            height: 6rem;
-            border-radius: 50%;
+            margin: 0 1.5rem;
+            width: 10rem;
+            height: 7rem;
+            border-radius: .1rem;
             text-align: center;
 
             img {
-                height: 3rem;
+                height: 4rem;
             }
 
             a {
@@ -61,11 +55,41 @@
         }
     }
 
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: 50rem;
+        margin: 3rem auto 2rem;
+        font-family: 'Roboto', sans-serif;
+
+        &Item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin: .5rem 0;
+            height: 4rem;
+
+            h3 {
+                font-size: 2.5rem;
+                font-weight: 300;
+                margin-right: 1rem;
+            }
+
+            h5 {
+                font-size: 3rem;
+                font-weight: 400;
+            }
+        }
+    }
+
     span {
         display: block;
         color: white;
         text-align: center;
-        margin: 6rem auto 3rem;
+        margin: 7rem auto 3rem;
         font-size: 1.5rem;
     }
 }
