@@ -290,17 +290,17 @@ ul {
   background-position: center;
 }
 .portfolio__item .two {
-  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/papers.png");
+  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/espresso-website.png");
   background-size: cover;
   background-position: center;
 }
 .portfolio__item .three {
-  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/jsWeather.png");
+  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/papers.png");
   background-size: cover;
   background-position: center;
 }
 .portfolio__item .four {
-  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/medical-clinic.png");
+  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/jsWeather.png");
   background-size: cover;
   background-position: center;
 }
