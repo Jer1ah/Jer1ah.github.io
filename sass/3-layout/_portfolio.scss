@@ -2,6 +2,9 @@
     background: $light-gray-blue;
     padding: .1rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     h1 {
         font-size: 2.9rem;
@@ -23,7 +26,7 @@
         flex-wrap: wrap;
         padding: 0;
         width: 140rem;
-        margin: 0 auto 7rem;
+        margin: 0 auto 3.5rem;
     }
 
     &__item {
@@ -127,6 +130,15 @@
             background-color: darken(#528ED6, 9%); 
             cursor: pointer;       
         }
+    }
+
+    .resumeLink {
+        color: #528ED6;
+        display: inline-block;
+        letter-spacing: .1rem;
+        font-size: 2.2rem;
+        margin: 0 0 6.6rem;
+        text-decoration: none;
     }
 }
 

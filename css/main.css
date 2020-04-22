@@ -252,6 +252,9 @@ ul {
   background: #F4F9FF;
   padding: 0.1rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .portfolio h1 {
   font-size: 2.9rem;
@@ -271,7 +274,7 @@ ul {
   flex-wrap: wrap;
   padding: 0;
   width: 140rem;
-  margin: 0 auto 7rem;
+  margin: 0 auto 3.5rem;
 }
 .portfolio__item {
   width: 30%;
@@ -356,6 +359,14 @@ ul {
 .portfolio__item a:hover {
   background-color: #3076ca;
   cursor: pointer;
+}
+.portfolio .resumeLink {
+  color: #528ED6;
+  display: inline-block;
+  letter-spacing: 0.1rem;
+  font-size: 2.2rem;
+  margin: 0 0 6.6rem;
+  text-decoration: none;
 }
 
 @media (max-width: 1390px) {
