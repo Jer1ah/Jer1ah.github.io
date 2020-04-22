@@ -170,7 +170,7 @@ ul {
   background-color: white;
   height: 0.3rem;
   width: 5rem;
-  margin: 2.5rem auto;
+  margin: 1rem auto;
 }
 .about h1 {
   color: #f2f2f2;
@@ -193,14 +193,14 @@ ul {
 }
 .skills h1 {
   font-size: 2.9rem;
-  margin: 12rem auto 2.5rem;
+  margin: 12rem auto 1.2rem;
   text-align: center;
 }
 .skills__line {
   background-color: #528ED6;
   width: 5rem;
   height: 0.4rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 .skills__list {
   display: flex;
@@ -262,7 +262,7 @@ ul {
   background-color: #528ED6;
   height: 0.4rem;
   width: 5rem;
-  margin: 2rem auto 7rem;
+  margin: 1.2rem auto 7rem;
 }
 .portfolio__list {
   display: flex;
@@ -390,47 +390,18 @@ ul {
   width: 48rem;
   color: white;
   text-align: center;
-  margin: 7rem auto 4rem;
+  margin: 2rem auto 1rem;
   max-width: 90%;
 }
 .footer__heading h1 {
-  font-size: 4rem;
-  margin: 5rem auto 0;
+  font-size: 3.66rem;
+  margin: 4.4rem auto 0;
 }
 .footer__info {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-}
-.footer__social {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-.footer__social--item {
-  background-color: #255c9d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 1.5rem;
-  width: 10rem;
-  height: 7rem;
-  border-radius: 0.1rem;
-  text-align: center;
-}
-.footer__social--item img {
-  height: 4rem;
-}
-.footer__social--item a {
-  text-decoration: none;
-  font-size: 1.7rem;
-  width: 17rem;
-  font-weight: bold;
-  color: white;
-  display: block;
 }
 .footer__contact {
   display: flex;
@@ -439,7 +410,7 @@ ul {
   padding: 0;
   width: 50rem;
   max-width: 80%;
-  margin: 3rem auto 2rem;
+  margin: 0 auto 2rem;
   font-family: "Roboto", sans-serif;
 }
 .footer__contactItem {
@@ -447,16 +418,15 @@ ul {
   justify-content: center;
   align-items: center;
   color: #fff;
-  margin: 0.5rem 0;
+  margin: 0;
   height: 4rem;
 }
-.footer__contactItem h3 {
-  font-size: 2.5rem;
-  font-weight: 300;
+.footer__contactItem img {
+  width: 2.5rem;
   margin-right: 1rem;
 }
 .footer__contactItem h5 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 400;
 }
 .footer span {
@@ -466,30 +436,11 @@ ul {
   margin: 7rem auto 3rem;
   font-size: 1.5rem;
 }
-
-@media (max-width: 700px) {
-  .footer__social {
-    flex-direction: column;
-    width: 80%;
-  }
-  .footer__social--item {
-    margin: 1rem 0;
-    width: 100%;
-  }
-  .footer__social--item:first-child {
-    margin-top: 0;
-  }
-  .footer__contactItem {
-    flex-direction: column;
-    height: auto;
-    margin: 2rem 0;
-  }
-  .footer__contactItem h3 {
-    margin: 0;
-  }
-  .footer__contactItem h5 {
-    margin: 0;
-  }
+.footer__line {
+  background-color: white;
+  height: 0.3rem;
+  width: 5rem;
+  margin: 1rem auto 2.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

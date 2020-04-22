@@ -6,12 +6,12 @@
         width: 48rem;
         color: white;
         text-align: center;
-        margin: 7rem auto 4rem;
+        margin: 2rem auto 1rem;
         max-width: 90%;
 
         h1 {
-            font-size: 4rem;
-            margin: 5rem auto 0;
+            font-size: 3.66rem;
+            margin: 4.4rem auto 0;
         }
     }
 
@@ -21,39 +21,6 @@
         align-items: center;
         margin: 0 auto;
     }
-       
-    &__social {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-
-        &--item {
-            background-color: darken(#528ED6, 20%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 1.5rem;
-            width: 10rem;
-            height: 7rem;
-            border-radius: .1rem;
-            text-align: center;
-
-            img {
-                height: 4rem;
-            }
-
-            a {
-                text-decoration: none;
-                font-size: 1.7rem;
-                width: 17rem;
-                font-weight: bold;
-                color: white;
-                display: block;
-            }
-        }
-    }
 
     &__contact {
         display: flex;
@@ -62,7 +29,7 @@
         padding: 0;
         width: 50rem;
         max-width: 80%;
-        margin: 3rem auto 2rem;
+        margin: 0 auto 2rem;
         font-family: 'Roboto', sans-serif;
 
         &Item {
@@ -70,17 +37,16 @@
             justify-content: center;
             align-items: center;
             color: #fff;
-            margin: .5rem 0;
+            margin: 0;
             height: 4rem;
 
-            h3 {
-                font-size: 2.5rem;
-                font-weight: 300;
+            img {
+                width: 2.5rem;
                 margin-right: 1rem;
             }
 
             h5 {
-                font-size: 3rem;
+                font-size: 2.2rem;
                 font-weight: 400;
             }
         }
@@ -93,38 +59,11 @@
         margin: 7rem auto 3rem;
         font-size: 1.5rem;
     }
-}
 
-
-//MEDIA QUERIES 
-@media( max-width: 700px ) {
-    .footer {
-        &__social {
-            flex-direction: column;
-            width: 80%;
-
-            &--item {
-                margin: 1rem 0;
-                width: 100%;
-            }
-
-            &--item:first-child {
-                margin-top: 0;
-            }
-        }
-    
-        &__contactItem {
-            flex-direction: column;
-            height: auto;
-            margin: 2rem 0;
-
-            h3 {
-                margin: 0;
-            }
-
-            h5 {
-                margin: 0;
-            }
-        }
+    &__line {
+        background-color: white;
+        height: .3rem;
+        width: 5rem;
+        margin: 1rem auto 2.5rem;
     }
 }
