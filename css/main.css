@@ -288,7 +288,7 @@ ul {
 .portfolio__item--image {
   width: 100%;
   height: 25rem;
-  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/panthers-website.png");
+  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/quiz-game.png");
   background-size: cover;
   background-position: center;
 }
@@ -313,7 +313,7 @@ ul {
   background-position: center;
 }
 .portfolio__item .six {
-  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/quiz-game.png");
+  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/panthers-website.png");
   background-size: cover;
   background-position: center;
 }
