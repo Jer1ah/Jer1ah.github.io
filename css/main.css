@@ -259,7 +259,7 @@ ul {
 .portfolio h1 {
   font-size: 2.9rem;
   text-align: center;
-  margin: 12rem auto 1rem;
+  margin: 10rem auto 1rem;
 }
 .portfolio__line {
   background-color: #528ED6;
@@ -360,14 +360,6 @@ ul {
   background-color: #3076ca;
   cursor: pointer;
 }
-.portfolio .resumeLink {
-  color: #528ED6;
-  display: inline-block;
-  letter-spacing: 0.1rem;
-  font-size: 2.2rem;
-  margin: 0 0 6.6rem;
-  text-decoration: none;
-}
 
 @media (max-width: 1390px) {
   .portfolio__item {
@@ -396,62 +388,81 @@ ul {
 .footer {
   background-color: #528ED6;
   padding: 0.1rem;
-}
-.footer__heading {
-  width: 48rem;
-  color: white;
-  text-align: center;
-  margin: 2rem auto 1rem;
-  max-width: 90%;
-}
-.footer__heading h1 {
-  font-size: 3.66rem;
-  margin: 4.4rem auto 0;
-}
-.footer__info {
+  height: 8.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-}
-.footer__contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  width: 50rem;
-  max-width: 80%;
-  margin: 0 auto 2rem;
-  font-family: "Roboto", sans-serif;
-}
-.footer__contactItem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  margin: 0;
-  height: 4rem;
-}
-.footer__contactItem img {
-  width: 2.5rem;
-  margin-right: 1rem;
-}
-.footer__contactItem h5 {
-  font-size: 2.2rem;
-  font-weight: 400;
 }
 .footer span {
   display: block;
   color: white;
   text-align: center;
-  margin: 7rem auto 3rem;
   font-size: 1.5rem;
 }
-.footer__line {
-  background-color: white;
-  height: 0.3rem;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h1 {
+  font-size: 2.9rem;
+  text-align: center;
+  margin: 9rem auto 1rem;
+}
+.contact__line {
+  background-color: #528ED6;
+  height: 0.4rem;
   width: 5rem;
-  margin: 1rem auto 2.5rem;
+  margin: 1.2rem auto 3.5rem;
+}
+.contact__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9rem;
+}
+.contact__listItem {
+  margin: 0 2rem 0;
+  position: relative;
+  height: auto;
+}
+.contact__listItem span {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 0;
+}
+.contact__listItem h5 {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+}
+.contact__listItem::before {
+  content: "";
+  background-color: #528ED6;
+  height: 1.2rem;
+  width: 1.2rem;
+  position: absolute;
+  top: 0.8rem;
+  left: -2rem;
+}
+.contact__listItem:first-child {
+  margin-right: 5rem;
+}
+
+@media (max-width: 700px) {
+  .contact__list {
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+  }
+  .contact__listItem::before {
+    display: none;
+  }
+  .contact__listItem {
+    text-align: center;
+  }
+  .contact__listItem:first-child {
+    margin: 0 0 3rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
