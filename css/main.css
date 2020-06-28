@@ -6,6 +6,10 @@ html, body {
   font-size: 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -28,7 +32,7 @@ ul {
   width: 100%;
 }
 .header__nav img {
-  height: 3rem;
+  height: 3.5rem;
   margin-right: 5rem;
   display: none;
 }
@@ -287,13 +291,13 @@ ul {
 }
 .portfolio__item--image {
   width: 100%;
-  height: 25rem;
+  height: 23.5rem;
   background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/weather-app.png");
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
 }
 .portfolio__item .two {
-  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/espresso-website.png");
+  background: linear-gradient(rgba(82, 142, 214, 0.6), rgba(82, 142, 214, 0.6)), url("../../img/natours.png");
   background-size: cover;
   background-position: center;
 }
@@ -343,6 +347,13 @@ ul {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
+  border: 0.2rem solid #528ED6;
+  transition: all 0.2s;
+  font-weight: bolder;
+}
+.portfolio__item .demo:hover {
+  background-color: #fff;
+  color: #528ED6;
 }
 .portfolio__item .source {
   background-color: #528ED6;
@@ -355,10 +366,13 @@ ul {
   position: absolute;
   bottom: 2rem;
   left: 12.5rem;
+  border: 0.2rem solid #528ED6;
+  transition: all 0.2s;
+  font-weight: bolder;
 }
-.portfolio__item a:hover {
-  background-color: #3076ca;
-  cursor: pointer;
+.portfolio__item .source:hover {
+  background-color: #fff;
+  color: #528ED6;
 }
 
 @media (max-width: 1390px) {
@@ -414,7 +428,7 @@ ul {
   background-color: #528ED6;
   height: 0.4rem;
   width: 5rem;
-  margin: 1.2rem auto 3.5rem;
+  margin: 1.2rem auto 3.4rem;
 }
 .contact__list {
   display: flex;

@@ -40,16 +40,16 @@
         
         &--image {
             width: 100%;
-            height: 25rem;
+            height: 23.5rem;
             background: linear-gradient(rgba(82,142,214,.6), rgba(82,142,214,.6)),
                         url("../../img/weather-app.png");
-            background-size: cover;
+            background-size: 100%;
             background-position: center;
         }
 
         .two {
             background: linear-gradient(rgba(82,142,214,.6), rgba(82,142,214,.6)),
-                        url("../../img/espresso-website.png");
+                        url("../../img/natours.png");
             background-size: cover;
             background-position: center;
         }
@@ -111,6 +111,14 @@
             position: absolute;
             bottom: 2rem;
             left: 2rem;
+            border: .2rem solid $main-blue;
+            transition: all .2s;
+            font-weight: bolder;
+
+            &:hover {
+                background-color: #fff;
+                color: $main-blue;
+            }
         }
 
         .source {
@@ -124,11 +132,15 @@
             position: absolute;
             bottom: 2rem;
             left: 12.5rem;
-        }
 
-        a:hover {
-            background-color: darken(#528ED6, 9%); 
-            cursor: pointer;       
+            border: .2rem solid $main-blue;
+            transition: all .2s;
+            font-weight: bolder;
+
+            &:hover {
+                background-color: #fff;
+                color: $main-blue;
+            }
         }
     }
 }
