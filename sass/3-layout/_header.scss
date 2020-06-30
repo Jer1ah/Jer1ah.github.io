@@ -7,7 +7,12 @@
 
     &__heading {
         text-align: center;   
-        margin-top: 30rem;      
+        margin-top: 30rem;  
+        opacity: 0;
+        animation-name: fadeIn;
+        animation-duration: 1.33s;  
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards; 
 
         h1 {
             font-size: 6rem;
@@ -18,10 +23,23 @@
     }
 }
 
-//Media Queries
+
+//animations
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+//media queries
 @media(max-width: 945px) {
     .header__heading {
-        margin-top: 30rem;
+        margin-top: 33rem;
 
         h1 {
             font-size: 4.5rem;

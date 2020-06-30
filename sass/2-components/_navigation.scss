@@ -9,17 +9,27 @@
     transition: all .5s;
     padding: 2rem 0;
 
-    .mobile__nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    img {
-        height: 3.5rem;
+    .mobile-menu {
+        height: 2.5rem;
         margin-right: 5rem;
         display: none;
+        position: fixed;
+        top: 5.7rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 200;
+    }
+
+    .mobile-background {
+        width: 100vw;
+        position: fixed;
+        z-index: 101;
+        top: -2.5rem;
+        left: 0;
+        height: .5rem;
+        background-color: #fff;
+        transition: all .33s;
+        // box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
     }
 
     &--list {
@@ -72,15 +82,25 @@
     color: #528ED6 !important;
 }
 
-//Media Queries
+
+//animations
+@keyframes fadeInFromLeft {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+//media queries
 @media(max-width: 1075px) {
     .header__nav {
         &--list {
             margin-right: 5rem;
-        }
-
-        h3 {
-            margin-left: 5rem;
         }
     }
 }
@@ -89,24 +109,41 @@
     .header__nav {
         flex-direction: column;
         background-color: white;
+        height: 5rem;
+
+        .mobile-menu {
+            display: block;
+        }
+
+        .site-logo {
+            position: fixed;
+            z-index: 200;
+            left: 50%;
+            top: 1.7rem;
+            transform: translateX(-50%);
+            margin: 0;
+        }
 
         &--list {
             flex-direction: column;
-            align-self: flex-start;
-            text-align: left;
-            display: none;
-            margin-left: 5rem;
-            margin-top: 2rem;
+            text-align: center;
+            position: fixed;
+            z-index: 500;
+            top: 11rem;
             padding: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .33s;
 
             &--items {
-                margin: .7rem 0;
+                margin: 1.5rem 0;
                 width: 10rem;
-            }
-        }
 
-        img {
-            display: block;
+                a {
+                    font-size: 2.2rem;
+                    letter-spacing: .1rem;
+                }
+            }
         }
 
         a {
@@ -125,21 +162,5 @@
         h3 {
             color: #528ED6;
         }
-    }
-}
-
-@media(max-width: 575px) {
-    .mobile__nav {
-        h3 {
-            margin-left: 2rem;
-        }
-
-        img {
-            margin-right: 2rem;
-        }
-    }
-
-    .header__nav--list {
-        margin-left: 2rem;
     }
 }
