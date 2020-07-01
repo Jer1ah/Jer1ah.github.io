@@ -1,4 +1,4 @@
-//Adding navscroll functionality
+//navscroll functionality
 $(window).on("scroll", () => {
     if( $(window).scrollTop() > 75 ) {
         $(".header__nav").addClass("active__nav");
@@ -8,8 +8,8 @@ $(window).on("scroll", () => {
 });
 
 
-//Adding active nav on scroll
-//Adding classes to nav based on position relative to window
+//active nav on scroll
+//adding classes to nav based on position relative to window
 $(window).on("scroll", () => {
   if( $("#about").offset().top - $(window).scrollTop() < 65 ) {
     $(".header__nav--list--items:nth-child(1) a").addClass("activeScroll");
@@ -25,7 +25,7 @@ $(window).on("scroll", () => {
   }
 });
 
-//Removing classes to nav based on position relative to window
+//removing classes to nav based on position relative to window
 $(window).on("scroll", () => {
   if($("#about").offset().top - $(window).scrollTop() > 66) {
     $(".header__nav--list--items:nth-child(1) a").removeClass("activeScroll");
@@ -39,7 +39,7 @@ $(window).on("scroll", () => {
 });
 
 
-//adding mobile-nav functionality
+//mobile-nav functionality
 const mobileNavController = (function() {
   const _navButton = document.querySelector(".mobile-menu");
   const _navList = document.querySelector(".header__nav--list");
@@ -47,7 +47,7 @@ const mobileNavController = (function() {
 
   _navButton.addEventListener("click", () => {
     if(window.getComputedStyle(_navList).visibility === "hidden") {
-      _mobileBackground.style.transform = "scale(170)";
+      _mobileBackground.style.transform = "scale(160)";
       _navList.style.visibility = "visible";
       _navList.style.opacity = "1";
       _navButton.src = "img/up-arrow.svg";
@@ -58,4 +58,23 @@ const mobileNavController = (function() {
       _navButton.src = "img/down-arrow.svg";
     }
   });
+}());
+
+
+//checking navigation visibility on resize
+const windowResizeController = (function() {
+  const _navList = document.querySelector(".header__nav--list");
+  const _mobileBackground = document.querySelector(".mobile-background");
+
+  window.onresize = () => {
+    if(window.innerWidth > 965) {
+      _navList.style.visibility = "visible";
+      _navList.style.opacity = "1"; 
+      _mobileBackground.style.transform = "scale(0)";
+    } else {
+      _navList.style.visibility = "hidden";
+      _navList.style.opacity = "0"; 
+      _mobileBackground.style.transform = "scale(0)";
+    }
+  };
 }());

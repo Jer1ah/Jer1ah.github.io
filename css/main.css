@@ -63,10 +63,9 @@ ul {
 }
 .header__nav h3 {
   color: #fff;
-  margin: 15rem;
   font-size: 2.5rem;
   display: inline-block;
-  margin: 0 0 0 15rem;
+  margin-left: 15rem;
 }
 
 .active__nav {
@@ -100,6 +99,9 @@ ul {
   .header__nav--list {
     margin-right: 5rem;
   }
+  .header__nav .site-logo {
+    margin-left: 5rem;
+  }
 }
 @media (max-width: 965px) {
   .header__nav {
@@ -123,7 +125,7 @@ ul {
     text-align: center;
     position: fixed;
     z-index: 500;
-    top: 11rem;
+    top: 9rem;
     padding: 0;
     visibility: hidden;
     opacity: 0;
