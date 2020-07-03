@@ -119,6 +119,7 @@ ul {
     top: 1.7rem;
     transform: translateX(-50%);
     margin: 0;
+    width: 20rem;
   }
   .header__nav--list {
     flex-direction: column;
