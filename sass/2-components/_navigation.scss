@@ -8,15 +8,14 @@
     z-index: 10;
     transition: all .5s;
     padding: 2rem 0;
+    height: 3.55rem;
 
     .mobile-menu {
-        height: 2.45rem;
-        margin-right: 5rem;
+        height: 2.5rem;
         display: none;
         position: fixed;
-        top: 5.7rem;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 2.65rem;
+        right: 3rem;
         z-index: 200;
     }
 
@@ -112,7 +111,7 @@
     .header__nav {
         flex-direction: column;
         background-color: white;
-        height: 5rem;
+        height: 3.3rem;
 
         .mobile-menu {
             display: block;
@@ -121,9 +120,8 @@
         .site-logo {
             position: fixed;
             z-index: 200;
-            left: 50%;
-            top: 1.7rem;
-            transform: translateX(-50%);
+            left: 3rem;
+            top: 2rem;
             margin: 0;
             width: 20rem;
         }

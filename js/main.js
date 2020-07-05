@@ -50,12 +50,14 @@ const mobileNavController = (function() {
       _mobileBackground.style.transform = "scale(160)";
       _navList.style.visibility = "visible";
       _navList.style.opacity = "1";
-      _navButton.src = "img/up-arrow.svg";
+      _navButton.src = "img/close.svg";
+      _navButton.style.height = "2.15rem";
     } else {
       _mobileBackground.style.transform = "scale(0)";
       _navList.style.visibility = "hidden";
       _navList.style.opacity = "0";
-      _navButton.src = "img/down-arrow.svg";
+      _navButton.src = "img/menu.svg";
+      _navButton.style.height = "2.5rem";
     }
   });
 }());
