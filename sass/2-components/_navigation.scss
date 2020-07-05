@@ -20,7 +20,7 @@
     }
 
     .site-logo {
-        width: 20.5rem;
+        min-width: 21rem;
     }
 
     .mobile-background {
@@ -127,7 +127,6 @@
             left: 3rem;
             top: 2rem;
             margin: 0;
-            width: 20rem;
         }
 
         &--list {

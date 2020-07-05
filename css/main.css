@@ -35,7 +35,7 @@ ul {
   z-index: 200;
 }
 .header__nav .site-logo {
-  width: 20.5rem;
+  min-width: 21rem;
 }
 .header__nav .mobile-background {
   width: 100vw;
@@ -120,7 +120,6 @@ ul {
     left: 3rem;
     top: 2rem;
     margin: 0;
-    width: 20rem;
   }
   .header__nav--list {
     flex-direction: column;
