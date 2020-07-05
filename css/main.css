@@ -34,6 +34,9 @@ ul {
   right: 3rem;
   z-index: 200;
 }
+.header__nav .site-logo {
+  width: 20.5rem;
+}
 .header__nav .mobile-background {
   width: 100vw;
   position: fixed;
