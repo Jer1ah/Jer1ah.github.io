@@ -398,10 +398,16 @@ body {
     font-size: 2rem;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 575px) {
   .portfolio__listItem .info {
-    left: 2.2rem;
-    bottom: 2.5rem;
+    left: 1.25rem;
+    bottom: 1.25rem;
+  }
+  .portfolio__listItem .info h3 {
+    font-size: 1.75rem;
+  }
+  .portfolio__listItem .info .buttons a {
+    padding: 0.25rem 0.75rem;
   }
 }
 .contact {
