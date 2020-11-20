@@ -1,69 +1,82 @@
 .skills {
-    h1 {
-        font-size: 2.9rem;
-        margin: 12rem auto 1.2rem;
-        text-align: center;
-    }
+    background-color: $secondary-blue;
+    padding: .1rem;
 
-    &__line {
-        background-color: $main-blue;
-        width: 5rem;
-        height: .4rem;
-        margin: 1rem auto;
+    &__title {
+        @include displayFlex(column, flex-start, center);
+        width: 60rem;
+        max-width: 95%;
+        margin: 5.5rem auto 0;
+
+        h2 {
+            color: $main-red;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+        }
+    
+        .line {
+            height: .2rem;
+            background-color: $main-red;
+            width: 5rem;
+            margin-top: .25rem;
+        }
     }
 
     &__list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include displayFlex(row, space-between, flex-start);
+        width: 60rem;
+        max-width: 90%;
+        margin: 5rem auto 5.5rem; 
+        list-style: none;
         padding: 0;
-        margin: 7rem auto 10rem;
-        flex-wrap: wrap;
+    }
 
-        &--item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+    &__listItem {
+        @include displayFlex(column, flex-start, center);
+        width: 20%;
+
+        h4 {
+            color: $main-white;
+            font-size: 1.5rem;
+            margin: .75rem 0 .5rem;
+            letter-spacing: .1rem;
+            opacity: .9;
+        }
+
+        p {
+            color: $main-white;
+            font-size: 1rem;
             text-align: center;
-            margin: 0 2.5rem;
-            width: 17rem;
+            opacity: .75;
+        }
 
-            img {
-                width: 9rem;
-            }
-
-            h3 {
-                font-size: 2.4rem;
-                margin: 2rem auto 0;
-            }
-
-            p {
-                font-size: 1.7rem;
-                color: $dark-gray;
-                margin-top: .9rem;
-            }
+        img {
+            width: 5rem;
         }
     }
 }
 
-//Media Queries
-@media(max-width: 885px) {
-    .skills__list {
-        &--item {
-            width: 25rem;
-            margin: 1.5rem 3rem;
+//media queries
+@media(max-width: 850px) {
+    .skills {
+        &__list {
+            flex-wrap: wrap;
+            width: 40rem;
+        }
+
+        &__listItem {
+            width: 48%;
+            margin-bottom: 2.5rem;
         }
     }
 }
 
-@media(max-width: 630px) {
-    .skills__list--item {
-        width: 30rem;
-        margin: 3.5rem auto;
-    }
-
-    .skills__list--item:first-child {
-        margin-top: 0;
+@media(max-width: 670px) {
+    .skills {
+        &__listItem {
+            width: 100%;
+            margin-bottom: 3.5rem;
+        }
     }
 }

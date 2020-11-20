@@ -1,60 +1,64 @@
 .header {
-    height: 100vh;
-    background: linear-gradient(rgba(82, 142, 214, .5), rgba(82, 142, 214, .5)),
-                url("../../img/codingImg.png");
+    background: linear-gradient(rgba(50, 64, 114, .7), rgba(240, 90, 93, .8) 95%),
+                url('../../images/coding-image.png');
     background-size: cover;
-    padding: .1rem;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
 
-    &__heading {
-        text-align: center;   
-        margin-top: 30rem;  
-        opacity: 0;
-        animation-name: fadeIn;
-        animation-duration: 1.33s;  
-        animation-fill-mode: forwards;
-        -webkit-animation-fill-mode: forwards; 
-
+    &__logo {
+        @include displayFlex(column, center, center);
+        display: inline-flex;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        
         h1 {
-            font-size: 6rem;
-            color: white;
-            width: 75rem;
-            margin: 0 auto;
+            font-size: 10rem;
+            padding: .25rem .25rem;
+            border: rgba(200, 200, 200, .25) solid 1rem;
+            color: $main-white;
+            font-weight: 900;
+            letter-spacing: -.33rem;
+        }
+    }
+
+    span {
+        display: block;
+        color: $main-white;
+        font-size: 1.75rem;
+        margin-top: .75rem;
+    }
+
+    .down-arrow {
+        width: 2rem;
+        position: absolute;
+        bottom: .75rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 100%;
         }
     }
 }
-
-
-//animations
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 
 //media queries
-@media(max-width: 945px) {
-    .header__heading {
-        margin-top: 33rem;
-
-        h1 {
-            font-size: 4.5rem;
-            width: 55rem;
-        }
-    }
-}
-
-@media(max-width: 545px) {
+@media(max-width: 725px) {
     .header {
-        &__heading {
+        &__logo {
+            top: 46%;
+
             h1 {
-                max-width: 95%;
-                font-size: 4rem;
+                font-size: 7.5rem;
             }
+        }
+
+        span {
+            font-size: 1.5rem;
         }
     }
 }

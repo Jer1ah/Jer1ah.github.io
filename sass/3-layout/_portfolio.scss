@@ -1,176 +1,163 @@
 .portfolio {
-    background: $light-gray-blue;
+    background-color: lighten($main-gray, 11%);
     padding: .1rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    h1 {
-        font-size: 2.9rem;
-        text-align: center;
-        margin: 10rem auto 1rem;
-    }
+    &__title {
+        @include displayFlex(column, flex-start, center);
+        width: 60rem;
+        max-width: 95%;
+        margin: 5.5rem auto 0;
 
-    &__line {
-        background-color: $main-blue;
-        height: .4rem;
-        width: 5rem;
-        margin: 1.2rem auto 7rem;
+        h2 {
+            color: $secondary-blue;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+        }
+    
+        .line {
+            height: .2rem;
+            background-color: $secondary-blue;
+            width: 5rem;
+            margin-top: .25rem;
+        }
     }
 
     &__list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include displayFlex(row, space-between, flex-start);
+        margin: 5rem auto 5.5rem;
+        width: 70rem;
+        max-width: 90%;
         flex-wrap: wrap;
         padding: 0;
-        width: 140rem;
-        margin: 0 auto 3.5rem;
+        list-style: none;
     }
 
-    &__item {
-        width: 30%;
-        height: 52rem;
-        margin: 0 2rem 2.5rem;
-        background-color: white;
-        box-shadow: 0px 0px 66px 0px rgba(147,147,147,1);
-        border-radius: .5rem;
-        position: relative;
-        
-        &--image {
+    &__listItem {
+        width: 48.5%;
+        height: 20rem;
+        margin-bottom: 2rem;
+        position: relative; 
+        box-shadow: 0px 0px 10px 0px #444;
+        overflow: hidden;
+
+        .info {
+            position: absolute;
+            bottom: 3.5rem;
+            left: 3.5rem;
+            z-index: 500;
+
+            h3 {
+                color: $main-white;
+                font-size: 2rem;
+                letter-spacing: .1rem;
+                opacity: .85;
+                font-weight: 500;
+            }
+
+            .buttons {
+                @include displayFlex(row, flex-start, center);
+                margin-top: .75rem;
+
+                a {
+                    color: $main-white;
+                    opacity: 1;
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    background: $main-red;
+                    padding: .35rem 1rem;
+                    font-weight: 500;
+                    letter-spacing: .1rem;
+                    border: .2rem solid $main-red;
+                    transition: all .3s;
+                    border-radius: .2rem;
+
+                    &:first-child {
+                        margin-right: 1rem;
+                    }
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
             width: 100%;
-            height: 23.5rem;
-            background: linear-gradient(rgba(82,142,214,.6), rgba(82,142,214,.6)),
-                        url("../../img/weather-app.png");
-            background-size: 100%;
-            background-position: center;
+            background-color: rgba(17, 36, 55, .55);
+            transition: all .35s;
+            opacity: 0;
         }
+    }
 
-        .two {
-            background: linear-gradient(rgba(82,142,214,.6), rgba(82,142,214,.6)),
-                        url("../../img/natours.png");
-            background-size: cover;
-            background-position: center;
-        }
+    .one {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                    url('../../images/weather-app.png');
+        background-size: cover;
+        background-position: center;
+    }
 
-        .three {
-            background: linear-gradient(rgba(82,142,214,.6), rgba(82,142,214,.6)),
-                        url("../../img/scenic-website.png");
-            background-size: cover;
-            background-position: center;
-        }
+    .two {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                    url('../../images/natours-website.png');
+        background-size: cover;
+        background-position: center;
+    }
 
-        .four {
-            background: linear-gradient(rgba(82,142,214,.6), rgba(82,142,214,.6)),
-                        url("../../img/quiz-game.png");
-            background-size: cover;
-            background-position: center;
-        }
+    .three {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                    url('../../images/scenic-website.png');
+        background-size: cover;
+        background-position: center;
+    }
 
-        .five {
-            background: linear-gradient(rgba(82,142,214,.6), rgba(82,142,214,.6)),
-                        url("../../img/last-of-us-2-website.png");
-            background-size: cover;
-            background-position: center;
-        }
+    .four {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                    url('../../images/last-of-us-website.png');
+        background-size: cover;
+        background-position: center;
+    }
 
-        .six {
-            background: linear-gradient(rgba(82,142,214,.6), rgba(82,142,214,.6)),
-                        url("../../img/black-angus.png");
-            background-size: cover;
-            background-position: center;
-        }
+    .five {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                    url('../../images/quiz-game.png');
+        background-size: cover;
+        background-position: center;
+    }
 
-        &--line {
-            height: .4rem;
-            width: 11rem;
-            margin: .9rem 2.5rem 2rem;
-            background-color: $main-blue;
-        }
+    .six {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                    url('../../images/black-angus-website.png');
+        background-size: cover;
+        background-position: center;
+    }
+}
 
-        h3 {
-            font-size: 2.1rem;
-            margin: 2.5rem 2.5rem 1rem;
-        }
+//media queries 
+@media(max-width: 975px) {
+    .portfolio {
+        &__listItem {
+            width: 100%;
+            height: 25rem;
 
-        p {
-            font-size: 1.6rem;
-            margin: 0 2.5rem 2rem;
-            line-height: 2.7rem;
-        }
-
-        .demo {
-            background-color: $main-blue;
-            color: white;
-            border-radius: .2rem;
-            text-decoration: none;
-            font-size: 1.7rem;
-            display: inline-block;
-            padding: 1rem 2.2rem;
-            position: absolute;
-            bottom: 2rem;
-            left: 2rem;
-            border: .2rem solid $main-blue;
-            transition: all .2s;
-            font-weight: bolder;
-
-            &:hover {
-                background-color: #fff;
-                color: $main-blue;
-            }
-        }
-
-        .source {
-            background-color: $main-blue;
-            color: white;
-            border-radius: .2rem;
-            text-decoration: none;
-            font-size: 1.7rem;
-            display: inline-block;
-            padding: 1rem 2.2rem;
-            position: absolute;
-            bottom: 2rem;
-            left: 12.5rem;
-
-            border: .2rem solid $main-blue;
-            transition: all .2s;
-            font-weight: bolder;
-
-            &:hover {
-                background-color: #fff;
-                color: $main-blue;
+            .info h3 {
+                font-size: 2.5rem;
             }
         }
     }
 }
 
-//Media Queries
-@media(max-width: 1390px) {
-    .portfolio__item {
-        width: 37rem;
-    }
+@media(max-width: 700px) {
+    .portfolio__listItem {
+        height: 20rem;
 
-    .portfolio__list {
-        max-width: 97%;
-    }
-}
-
-@media(max-width: 1270px) {
-    .portfolio__item {
-        width: 49rem;
+        .info h3 {
+            font-size: 2rem;
+        }
     }
 }
-
-@media(max-width: 1100px) {
-    .portfolio__item {
-        width: 40rem;
-    }
-}
-
-@media(max-width: 910px) {
-    .portfolio__item {
-        width: 59rem;
-    }
-}
-

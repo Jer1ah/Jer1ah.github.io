@@ -2,153 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="format-detection" content="telephone=no">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Jer1ah's Code</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Jeriah Bowers - Web Developer</title>
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav">
-            <div class="mobile-background"></div>
-            <h3 class="site-logo">&lt;Jer1ah's Code/&gt;</h3>
-            <img src="img/menu.svg" alt="Mobile Menu Icon" class="mobile-menu">
-            <ul class="header__nav--list">
-                <li class="header__nav--list--items"><a href="#about" class="">About</a></li>
-                <li class="header__nav--list--items"><a href="#skills" class="">Skills</a></li>
-                <li class="header__nav--list--items"><a href="#portfolio" class="">Portfolio</a></li>
-                <li class="header__nav--list--items"><a href="#contact" class="">Contact</a></li>
-            </ul> <!-- .header__nav-list end -->
-        </nav> <!-- .header__nav end -->
-        <div class="header__heading">
-            <h1>Hi, I'm Jeriah. And I build user interfaces.</h1>
-        </div> <!-- .header__heading end -->
-    </header> <!-- .header end -->
-    <div class="about" id="about">
-        <h1>About Me</h1>
-        <div class="about__line"></div> <!-- .about__line end -->
-        <p>My name is Jeriah, and I’m a highly motivated front-end web developer who has a real passion for this industry. I care deeply about the code I write and perfecting my craft. And ever since creating "Hello World" in the console of my first application I've been hooked.</p>
+        <div class="header__logo">
+            <h1>JB.</h1>
+            <span>Front-End Web Developer</span>
+        </div> <!-- .header__logo -->
+        <a href="#about" class="down-arrow">
+            <img src="images/down-arrow.svg" alt="Down Arrow SVG">
+        </a>
+    </header>
+    <div class="about">
+        <div class="about__wrapper">
+            <div class="about__image">
+                <span class="about__title">
+                    <h2>Jeriah</h2>
+                    <h2>Bowers</h2>
+                </span>
+            </div> <!-- .about__image end -->
+            <div class="about__info" id="about">
+                <h3>Who am I?</h3>
+                <h4>A 22 year old self-taught front-end web developer</h4>
+                <div class="line"></div>
+                <p> I’m highly motivated and have a true passion for this industry. Ever since I produced "Hello World" in the console of my first application I knew I was hooked into the world of software development.</p> 
+                <p>I care deeply about perfecting my craft on a daily basis and I'm always striving to be a better developer than I was the day before.</p>
+            </div> <!-- .about__info end -->
+        </div> <!-- .about__wrapper end -->
     </div> <!-- .about end -->
-    <div class="skills" id="skills">
-        <h1>My Skills</h1>
-        <div class="skills__line"></div> <!-- .skills__line end -->
+    <div class="skills">
+        <div class="skills__title">
+            <h2>Skills</h2>
+            <div class="line"></div>
+        </div> <!-- .skills__title end -->
         <ul class="skills__list">
-            <li class="skills__list--item">
-                <img src="img/html.svg" alt="HTML Icon">
-                <h3>Markup</h3>
+            <li class="skills__listItem">
+                <img src="images/html.svg" alt="Icon">
+                <h4>Markup</h4>
                 <p>Hypertext Markup Language, aka HTML</p>
             </li>
-            <li class="skills__list--item">
-                <img src="img/css.svg" alt="CSS Icon">
-                <h3>Styling</h3>
+            <li class="skills__listItem">
+                <img src="images/css.svg" alt="Icon">
+                <h4>Styling</h4>
                 <p>CSS, SASS and CSS Modules</p>
             </li>
-            <li class="skills__list--item">
-                <img src="img/js.svg" alt="JS Icon">
-                <h3>Programming</h3>
+            <li class="skills__listItem">
+                <img src="images/javascript.svg" alt="Icon">
+                <h4>Programming</h4>
                 <p>Javascript, jQuery, React.js and Redux</p>
             </li>
-            <li class="skills__list--item">
-                <img src="img/git.svg" alt="Git Icon">
-                <h3>Other Skills</h3>
+            <li class="skills__listItem">
+                <img src="images/git.svg" alt="Icon">
+                <h4>Other Skills</h4>
                 <p>Git, Github, NPM and Developer Tools</p>
             </li>
         </ul> <!-- .skills__list end -->
     </div> <!-- .skills end -->
-    <div class="portfolio" id="portfolio">
-        <h1>My Portfolio</h1>
-        <div class="portfolio__line"></div>
+    <div class="portfolio">
+        <div class="portfolio__title">
+            <h2>Latest Works</h2>
+            <div class="line"></div>
+        </div> <!-- .portfolio__title end -->
         <ul class="portfolio__list">
-            <li class="portfolio__item">
-                <div class="portfolio__item--image one"></div>
-                <div class="portfolio__item--info">
+            <li class="portfolio__listItem one">
+                <div class="info">
                     <h3>React Weather App</h3>
-                    <div class="portfolio__item--line"></div>
-                    <p>Weather app that takes zipcode as input and returns the current conditions, hourly and 5 day futurecast.</p>
-                    <a href="http://jeriahbowers.com/weather-app/" target="_blank" class="demo">Demo</a>
-                    <a href="https://github.com/Jer1ah/weather-app" target="_blank" class="source">&lt;Source/&gt;</a>
+                    <div class="buttons">
+                        <a href="http://jeriahbowers.com/weather-app/" target="_blank">Demo</a>
+                        <a href="https://github.com/Jer1ah/weather-app" target="_blank">&lt;Code/&gt;</a>
+                    </div>
                 </div>
-            </li> <!-- .portfolio__item end -->
-            <li class="portfolio__item">
-                <div class="portfolio__item--image two"></div>
-                <div class="portfolio__item--info">
+                <div class="overlay"></div>
+            </li>
+            <li class="portfolio__listItem two">
+                <div class="info">
                     <h3>Natours Website</h3>
-                    <div class="portfolio__item--line"></div>
-                    <p>A brochure website for a company that offers nature tours.</p>
-                    <a href="http://jeriahbowers.com/natours-website/" target="_blank" class="demo">Demo</a>
-                    <a href="https://github.com/Jer1ah/natours-website" target="_blank" class="source">&lt;Source/&gt;</a>
+                    <div class="buttons">
+                        <a href="http://jeriahbowers.com/natours-website/" target="_blank">Demo</a>
+                        <a href="https://github.com/Jer1ah/natours-website" target="_blank">&lt;Code/&gt;</a>
+                    </div>
                 </div>
-            </li> <!-- .portfolio__item end -->
-            <li class="portfolio__item">
-                <div class="portfolio__item--image three"></div>
-                <div class="portfolio__item--info">
+                <div class="overlay"></div>
+            </li>
+            <li class="portfolio__listItem three">
+                <div class="info">
                     <h3>Scenic Website</h3>
-                    <div class="portfolio__item--line"></div>
-                    <p>A website about a web agency based in Buffalo, New York.</p>
-                    <a href="http://www.jeriahbowers.com/scenic-website/" target="_blank" class="demo">Demo</a>
-                    <a href="https://github.com/Jer1ah/scenic-website" target="_blank" class="source">&lt;Source/&gt;</a>
+                    <div class="buttons">
+                        <a href="http://jeriahbowers.com/scenic-website/" target="_blank">Demo</a>
+                        <a href="https://github.com/Jer1ah/scenic-website" target="_blank">&lt;Code/&gt;</a>
+                    </div>
                 </div>
-            </li> <!-- .portfolio__item end -->
-            <li class="portfolio__item">
-                <div class="portfolio__item--image four"></div>
-                <div class="portfolio__item--info">
-                    <h3>React Quiz Game</h3>
-                    <div class="portfolio__item--line"></div>
-                    <p>22 question quiz game that keeps track of your overall score and has a leaderboard to add your score to at the end.</p>
-                    <a href="http://www.jeriahbowers.com/trivia360-game/#/" target="_blank" class="demo">Demo</a>
-                    <a href="https://github.com/Jer1ah/trivia360-game" target="_blank" class="source">&lt;Source/&gt;</a>
-                </div>
-            </li> <!-- .portfolio__item end -->
-            <li class="portfolio__item">
-                <div class="portfolio__item--image five"></div>
-                <div class="portfolio__item--info">
+                <div class="overlay"></div>
+            </li>
+            <li class="portfolio__listItem four">
+                <div class="info">
                     <h3>Last of Us Website</h3>
-                    <div class="portfolio__item--line"></div>
-                    <p>A website with information about the upcoming game from Naughty Dog "The Last of Us Part II".</p>
-                    <a href="http://www.jeriahbowers.com/last-of-us-website/" target="_blank" class="demo">Demo</a>
-                    <a href="https://github.com/Jer1ah/last-of-us-website" target="_blank" class="source">&lt;Source/&gt;</a>
+                    <div class="buttons">
+                        <a href="http://jeriahbowers.com/last-of-us-website/" target="_blank">Demo</a>
+                        <a href="https://github.com/Jer1ah/last-of-us-website" target="_blank">&lt;Code/&gt;</a>
+                    </div>
                 </div>
-            </li> <!-- .portfolio__item end -->
-            <li class="portfolio__item">
-                <div class="portfolio__item--image six"></div>
-                <div class="portfolio__item--info">
+                <div class="overlay"></div>
+            </li>
+            <li class="portfolio__listItem five">
+                <div class="info">
+                    <h3>React Quiz Game</h3>
+                    <div class="buttons">
+                        <a href="http://jeriahbowers.com/trivia360-game/#/" target="_blank">Demo</a>
+                        <a href="https://github.com/Jer1ah/trivia360-game" target="_blank">&lt;Code/&gt;</a>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </li>
+            <li class="portfolio__listItem six">
+                <div class="info">
                     <h3>Black Angus Website</h3>
-                    <div class="portfolio__item--line"></div>
-                    <p>A website about a steak house located in Brooklyn, New York.</p>
-                    <a href="http://www.jeriahbowers.com/black-angus-website/" target="_blank" class="demo">Demo</a>
-                    <a href="https://github.com/Jer1ah/black-angus-website" target="_blank" class="source">&lt;Source/&gt;</a>
+                    <div class="buttons">
+                        <a href="http://jeriahbowers.com/black-angus-website/" target="_blank">Demo</a>
+                        <a href="https://github.com/Jer1ah/black-angus-website" target="_blank">&lt;Code/&gt;</a>
+                    </div>
                 </div>
-            </li> <!-- .portfolio__item end -->
+                <div class="overlay"></div>
+            </li>
         </ul> <!-- .portfolio__list end -->
     </div> <!-- .portfolio end -->
-    <div class="contact" id="contact">
-        <h1>Contact</h1>
-        <div class="contact__line"></div>
+    <div class="contact">
+        <a href="mailto:jeriah97bowers@yahoo.com" class="contact__email"><img src="images/email-white.svg" alt="Email Icon"> Get in Touch</a>
         <ul class="contact__list">
             <li class="contact__listItem">
-                <h5>Phone</h5>
-                <span>980-622-1490</span>
+                <a href="https://www.facebook.com/Jman197" target="_blank"><img src="images/facebook.svg" alt="Social Icon">Facebook</a>
             </li>
             <li class="contact__listItem">
-                <h5>Email</h5>
-                <span>jeriah97bowers@yahoo.com</span>
+                <a href="https://www.instagram.com/jer1ah/" target="_blank"><img src="images/instagram.svg" alt="Social Icon">Instagram</a>
+            </li>
+            <li class="contact__listItem">
+                <a href="https://www.linkedin.com/in/jeriahbowers/" target="_blank"><img src="images/linkedin-logo.svg" alt="Social Icon">Linkedin</a>
+            </li>
+            <li class="contact__listItem">
+                <a href="https://github.com/Jer1ah" target="_blank"><img src="images/github.svg" alt="Social Icon">Github</a>
             </li>
         </ul> <!-- .contact__list end -->
     </div> <!-- .contact end -->
     <footer class="footer">
-        <span>Copyright &copy; Jeriah Bowers 2018</span>
+        <span>&copy;2020 Jeriah Bowers</span>
     </footer>
-<script
- src="https://code.jquery.com/jquery-3.3.1.min.js"
- integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
- crossorigin="anonymous"></script>
-<script src="js/lightbox.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
