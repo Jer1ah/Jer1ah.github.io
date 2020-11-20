@@ -398,6 +398,12 @@ body {
     font-size: 2rem;
   }
 }
+@media (max-width: 550px) {
+  .portfolio__listItem .info {
+    left: 2.2rem;
+    bottom: 2.5rem;
+  }
+}
 .contact {
   display: flex;
   flex-direction: column;
