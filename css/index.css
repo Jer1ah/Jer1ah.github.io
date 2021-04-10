@@ -194,15 +194,16 @@ body {
   margin: 5.5rem auto 0;
 }
 .skills__title h2 {
-  color: #F05A5D;
-  font-size: 2.5rem;
+  color: #C7CCD0;
+  font-size: 2.25rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  font-weight: 500;
 }
 .skills__title .line {
-  height: 0.2rem;
-  background-color: #F05A5D;
-  width: 5rem;
+  height: 0.125rem;
+  background-color: #C7CCD0;
+  width: 3.5rem;
   margin-top: 0.25rem;
 }
 .skills__list {
@@ -212,7 +213,7 @@ body {
   align-items: flex-start;
   width: 60rem;
   max-width: 90%;
-  margin: 5rem auto 5.5rem;
+  margin: 3.5rem auto 6.5rem;
   list-style: none;
   padding: 0;
 }
@@ -229,6 +230,7 @@ body {
   margin: 0.75rem 0 0.5rem;
   letter-spacing: 0.1rem;
   opacity: 0.9;
+  font-weight: 500;
 }
 .skills__listItem p {
   color: white;
@@ -257,7 +259,7 @@ body {
   }
 }
 .portfolio {
-  background-color: #c4c9ce;
+  background-color: #C7CCD0;
   padding: 0.1rem;
 }
 .portfolio__title {
@@ -271,14 +273,15 @@ body {
 }
 .portfolio__title h2 {
   color: #112437;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  font-weight: 400;
 }
 .portfolio__title .line {
-  height: 0.2rem;
+  height: 0.125rem;
   background-color: #112437;
-  width: 5rem;
+  width: 3.5rem;
   margin-top: 0.25rem;
 }
 .portfolio__list {
@@ -294,122 +297,98 @@ body {
   list-style: none;
 }
 .portfolio__listItem {
-  width: 48.5%;
-  height: 20rem;
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
   position: relative;
-  box-shadow: 0px 0px 10px 0px #444;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 15px 0px #777;
   overflow: hidden;
+  border-radius: 0.25rem;
 }
-.portfolio__listItem .info {
+.portfolio__listItem-image {
+  width: 55%;
+}
+.portfolio__listItem-image img {
+  width: 100%;
+  transform: scale(1.015);
+}
+.portfolio__listItem-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 45%;
+  background-color: #b4bac0;
+  padding: 0 1.5rem;
   position: absolute;
-  bottom: 3.5rem;
-  left: 3.5rem;
-  z-index: 500;
+  height: 100%;
+  right: 0;
+  top: 0;
 }
-.portfolio__listItem .info h3 {
-  color: white;
+.portfolio__listItem-info h3 {
   font-size: 2rem;
-  letter-spacing: 0.1rem;
-  opacity: 0.85;
   font-weight: 500;
+  line-height: 1.75rem;
+  margin-top: 1.75rem;
 }
-.portfolio__listItem .info .buttons {
+.portfolio__listItem-info__list {
+  list-style: none;
+  margin: 1rem 0;
+}
+.portfolio__listItem-info__listItem {
+  font-size: 1.15rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  margin-top: 0.75rem;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
 }
-.portfolio__listItem .info .buttons a {
-  color: white;
-  opacity: 1;
+.portfolio__listItem-info__listItem:last-child {
+  margin-bottom: 0;
+}
+.portfolio__listItem-info a {
   text-decoration: none;
-  font-size: 1.1rem;
-  background: #F05A5D;
-  padding: 0.35rem 1rem;
-  font-weight: 500;
+  color: white;
+  background-color: #112437;
+  border: 0.2rem solid #112437;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  border: 0.2rem solid #F05A5D;
-  transition: all 0.3s;
-  border-radius: 0.2rem;
-}
-.portfolio__listItem .info .buttons a:first-child {
-  margin-right: 1rem;
-}
-.portfolio__listItem .info .buttons a:hover {
-  background-color: transparent;
-}
-.portfolio__listItem .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(17, 36, 55, 0.55);
+  font-weight: 400;
+  height: 2.5rem;
+  width: 9rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   transition: all 0.35s;
-  opacity: 0;
 }
-.portfolio .one {
-  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/weather-app.png");
-  background-size: cover;
-  background-position: center;
+.portfolio__listItem-info a:hover {
+  background-color: transparent;
+  color: #112437;
+  font-weight: 600;
 }
-.portfolio .two {
-  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/natours-website.png");
-  background-size: cover;
-  background-position: center;
+.portfolio__listItem-info .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-.portfolio .three {
-  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/scenic-website.png");
-  background-size: cover;
-  background-position: center;
+.portfolio .odd {
+  flex-direction: row-reverse;
 }
-.portfolio .four {
-  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/last-of-us-website.png");
-  background-size: cover;
-  background-position: center;
+.portfolio .odd .portfolio__listItem-info {
+  align-items: flex-end;
+  left: 0;
 }
-.portfolio .five {
-  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/quiz-game.png");
-  background-size: cover;
-  background-position: center;
-}
-.portfolio .six {
-  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/black-angus-website.png");
-  background-size: cover;
-  background-position: center;
+.portfolio .odd .portfolio__listItem-info__listItem {
+  justify-content: flex-end;
 }
 
-@media (max-width: 975px) {
-  .portfolio__listItem {
-    width: 100%;
-    height: 25rem;
-  }
-  .portfolio__listItem .info h3 {
-    font-size: 2.5rem;
-  }
-}
-@media (max-width: 700px) {
-  .portfolio__listItem {
-    height: 20rem;
-  }
-  .portfolio__listItem .info h3 {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 575px) {
-  .portfolio__listItem .info {
-    left: 1.25rem;
-    bottom: 1.25rem;
-  }
-  .portfolio__listItem .info h3 {
-    font-size: 1.75rem;
-  }
-  .portfolio__listItem .info .buttons a {
-    padding: 0.25rem 0.75rem;
-  }
-}
 .contact {
   display: flex;
   flex-direction: column;

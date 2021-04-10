@@ -1,5 +1,5 @@
 .portfolio {
-    background-color: lighten($main-gray, 11%);
+    background-color: $secondary-gray;
     padding: .1rem;
 
     &__title {
@@ -10,15 +10,16 @@
 
         h2 {
             color: $secondary-blue;
-            font-size: 2.5rem;
+            font-size: 2.25rem;
             text-transform: uppercase;
             letter-spacing: .1rem;
+            font-weight: 400;
         }
     
         .line {
-            height: .2rem;
+            height: .125rem;
             background-color: $secondary-blue;
-            width: 5rem;
+            width: 3.5rem;
             margin-top: .25rem;
         }
     }
@@ -34,146 +35,93 @@
     }
 
     &__listItem {
-        width: 48.5%;
-        height: 20rem;
-        margin-bottom: 2rem;
-        position: relative; 
-        box-shadow: 0px 0px 10px 0px #444;
+        @include displayFlex(row, space-between, flex-start);
+        width: 100%;
+        position: relative;
+        margin-bottom: 1rem;
+        box-shadow: 0px 0px 15px 0px #777;
         overflow: hidden;
+        border-radius: .25rem;
 
-        .info {
+
+        &-image {
+            width: 55%;
+
+            img {
+                width: 100%;
+                transform: scale(1.015);
+            }
+        }
+
+        &-info {
+            @include displayFlex(column, flex-start, flex-start);
+            width: 45%;
+            background-color: lighten($main-gray, 5%);
+            padding: 0 1.5rem;
             position: absolute;
-            bottom: 3.5rem;
-            left: 3.5rem;
-            z-index: 500;
+            height: 100%;
+            right: 0;
+            top: 0;
 
             h3 {
-                color: $main-white;
                 font-size: 2rem;
-                letter-spacing: .1rem;
-                opacity: .85;
                 font-weight: 500;
+                line-height: 1.75rem;
+                margin-top: 1.75rem;
             }
 
-            .buttons {
-                @include displayFlex(row, flex-start, center);
-                margin-top: .75rem;
+            &__list {
+                list-style: none;
+                margin: 1rem 0;
 
-                a {
-                    color: $main-white;
-                    opacity: 1;
-                    text-decoration: none;
-                    font-size: 1.1rem;
-                    background: $main-red;
-                    padding: .35rem 1rem;
-                    font-weight: 500;
-                    letter-spacing: .1rem;
-                    border: .2rem solid $main-red;
-                    transition: all .3s;
-                    border-radius: .2rem;
+                &Item {
+                    font-size: 1.15rem;
+                    @include displayFlex(row, flex-start, flex-end);
+                    margin-bottom: .5rem;
 
-                    &:first-child {
-                        margin-right: 1rem;
-                    }
-
-                    &:hover {
-                        background-color: transparent;
+                    &:last-child {
+                        margin-bottom: 0;
                     }
                 }
             }
-        }
 
-        .overlay {
-            position: absolute;
-            top: 0;
+            a {
+                text-decoration: none;
+                color: white;
+                background-color: $secondary-blue;
+                border: .2rem solid $secondary-blue;
+                font-size: 1rem;
+                letter-spacing: .1rem;
+                font-weight: 400;
+                height: 2.5rem;
+                width: 9rem;
+                border-radius: .25rem;
+                margin-bottom: .5rem;
+                @include displayFlex(row, center, center);
+                transition: all .35s;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $secondary-blue;
+                    font-weight: 600;
+                }
+            }
+
+            .buttons {
+                @include displayFlex(column, flex-start,flex-start);
+            }
+        }
+    }
+
+    .odd {
+        flex-direction: row-reverse;
+
+        .portfolio__listItem-info {
+            align-items: flex-end;
             left: 0;
-            height: 100%;
-            width: 100%;
-            background-color: rgba(17, 36, 55, .55);
-            transition: all .35s;
-            opacity: 0;
-        }
-    }
 
-    .one {
-        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
-                    url('../../images/weather-app.png');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .two {
-        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
-                    url('../../images/natours-website.png');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .three {
-        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
-                    url('../../images/scenic-website.png');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .four {
-        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
-                    url('../../images/last-of-us-website.png');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .five {
-        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
-                    url('../../images/quiz-game.png');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .six {
-        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
-                    url('../../images/black-angus-website.png');
-        background-size: cover;
-        background-position: center;
-    }
-}
-
-//media queries 
-@media(max-width: 975px) {
-    .portfolio {
-        &__listItem {
-            width: 100%;
-            height: 25rem;
-
-            .info h3 {
-                font-size: 2.5rem;
-            }
-        }
-    }
-}
-
-@media(max-width: 700px) {
-    .portfolio__listItem {
-        height: 20rem;
-
-        .info h3 {
-            font-size: 2rem;
-        }
-    }
-}
-
-@media(max-width: 575px) {
-    .portfolio__listItem {
-        .info {
-            left: 1.25rem;
-            bottom: 1.25rem;
-
-            h3 {
-                font-size: 1.75rem;
-            }
-
-            .buttons a {
-                padding: .25rem .75rem;
+            &__listItem {
+                justify-content: flex-end;
             }
         }
     }
