@@ -27,7 +27,7 @@
     &__list {
         @include displayFlex(row, space-between, flex-start);
         margin: 5rem auto 5.5rem;
-        width: 70rem;
+        width: 75rem;
         max-width: 90%;
         flex-wrap: wrap;
         padding: 0;
@@ -68,6 +68,13 @@
                 font-weight: 500;
                 line-height: 1.75rem;
                 margin-top: 1.75rem;
+            }
+
+            .line {
+                width: 4.5rem;
+                height: .1rem;
+                background-color: $secondary-blue;
+                margin-top: .55rem;
             }
 
             &__list {
@@ -122,6 +129,96 @@
 
             &__listItem {
                 justify-content: flex-end;
+            }
+        }
+    }
+}
+
+// media queries
+@media(max-width: 1050px) {
+    .portfolio__listItem {
+        &-info {
+            width: 40%;
+        }
+
+        &-image {
+            width: 60%;
+        }
+    }
+}
+
+@media(max-width: 965px) {
+    .portfolio__listItem {
+        flex-direction: column;
+
+        &-info {
+            width: 100%;
+            background-color: rgba(0,0,0,.75);
+
+            h3 {
+                color: white;
+                opacity: .9;
+            }
+
+            .line {
+                background-color: $main-red;
+            }
+
+            &__listItem {
+                color: white;
+                opacity: .75;
+            }
+
+            a {
+                background-color: $main-red;
+                border: .2rem solid $main-red;
+
+                &:hover {
+                    color: $main-red;
+                }
+            }
+        }
+
+        &-image {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 675px) {
+    .portfolio__listItem {
+        &-info {
+            .buttons {
+                flex-direction: row;
+
+                a {
+                    margin-right: .75rem;
+                }
+            }
+
+            &__list {
+                @include displayFlex(row, flex-start, flex-start);
+                margin: .75rem 0;
+
+                &Item {
+                    margin-right: .55rem;
+                }
+            }
+        }
+    }
+
+    .portfolio {
+        .odd {
+            .portfolio__listItem-info {
+                .buttons a {
+                    margin-right: 0;
+                    margin-left: .75rem;
+                }
+
+                &__listItem {
+                    margin-right: 0;
+                    margin-left: .55rem;
+                }
             }
         }
     }
